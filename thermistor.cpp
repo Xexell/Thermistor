@@ -44,7 +44,7 @@ int Thermistor::rms(){
 }
 
 long Thermistor::getVolt(){
-	return (this->ref*this->rms())/1023;
+    return ((long)(this->rms())*this->ref)/1023;
 }
 
 float Thermistor::resistence(){
